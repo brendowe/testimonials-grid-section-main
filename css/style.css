@@ -116,7 +116,6 @@ p {
     display: grid;
     gap: 50px;
     height: 100vh;
-    background-color: red;
     grid-template-areas: 
     'card1 card1 card1  card2 card5'
     'card3 card4 card4 card4 card5'
