@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: var(--font);
+}
+
+:root {
+  --font: "Barlow Semi Condensed", sans-serif;
+  --Moderateviolet: hsl(263, 55%, 52%);
+  --Verydarkgrayishblue: hsl(217, 19%, 35%);
+  --Verydarkblackishblue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+  --Lightgray: hsl(0, 0%, 81%);
+  --Lightgrayishblue: hsl(210, 46%, 95%);
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  background-color: var(--Lightgrayishblue);
+  gap: 40px;
+  padding: 50px 0px 50px 0px;
+}
+
+.user {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 12px;
+}
+
+img {
+  border-radius: 50px;
+  margin-right: 20px;
+  height: 50px;
+}
+
+.card {
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  width: 412px;
+  margin: auto;
+}
+
+.card > h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--White);
+}
+
+.userNImg > h2 {
+  color: var(--White);
+}
+
+h3 {
+  color: var(--Lightgray);
+}
+
+p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: var(--Lightgray);
+}
+
+.card1 {
+  background-color: var(--Moderateviolet);
+}
+
+.card2 {
+  background-color: var(--Verydarkgrayishblue);
+}
+
+.card3,
+.card5 {
+  background-color: var(--White);
+}
+
+.card3 h2 {
+  color: var(--Verydarkblackishblue);
+}
+
+.card3 p {
+  color: var(--Verydarkgrayishblue);
+}
+
+.card4 {
+  background-color: var(--Verydarkblackishblue);
+}
+
+.card4 p {
+  color: var(--Lightgray);
+}
+
+.card4 .user h3 {
+  color: var(--Verydarkgrayishblue);
+}
+
+.card5 h2 {
+  color: var(--Verydarkgrayishblue);
+}
+
+.card5 p {
+  color: var(--Verydarkgrayishblue);
+}
+
+@media (min-width: 1440px) {
+  #container {
+    display: grid;
+    gap: 50px;
+    height: 100vh;
+    background-color: red;
+    grid-template-areas: 
+    'card1 card1 card1  card2 card5'
+    'card3 card4 card4 card4 card5'
+    'card3 card4 card4 card4 card5';
+    padding: 20px;
+  }
+
+  .card {
+    margin: 0;
+    width: 100%;
+  }
+
+  .user  h3  {
+    padding-left: 20px;
+    
+  }
+
+  .card h2 {
+    font-size: 2em;
+    font-weight: 600;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .card p {
+    padding: 20px 20px 0px 20px;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .card1 {
+    grid-area: card1;
+  }
+
+  .card2 {
+    grid-area: card2;
+  }
+
+  .card3 {
+    grid-area: card3;
+  }
+
+  .card4 {
+    grid-area: card4;
+  }
+
+  .card5 {
+    grid-area: card5;
+  }
+}
